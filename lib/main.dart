@@ -27,9 +27,11 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.red[600],
     ),
   body: const Center(
-    child: Image(
-      image: AssetImage('assets/space2.jpeg'),
-    ),
+    child: Icon(
+      Icons.check_box,
+      color: Colors.blueGrey,
+      size: 50.0,
+      ),
   ),
   floatingActionButton: FloatingActionButton(
     onPressed: () {},
