@@ -26,21 +26,68 @@ class Home extends StatelessWidget {
       centerTitle: true,
       backgroundColor : Colors.red[600],
     ),
-  body: Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    crossAxisAlignment: CrossAxisAlignment.center,
-    children: <Widget>[
-     Text('hello'),
-     TextButton(
-       onPressed: (){},
-       child: Text('click me'),
-       ),
-       Container(
+  body: Column( 
+    crossAxisAlignment: CrossAxisAlignment.stretch,
+    mainAxisAlignment: MainAxisAlignment.start,
+    children: <Widget> [
+        Container(
+          color: Colors.black,
+          child: Row(          
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget> [
+            Text(
+              'hellow',
+              style: TextStyle(
+                color: Colors.amber,
+                fontSize: 30.0
+              )           
+              ),
+            Text(
+              'about us',
+              style: TextStyle(
+                color: Colors.amber,
+                fontSize: 30.0
+              )
+              ),
+            Text(
+              'prices',
+              style: TextStyle(
+                color: Colors.amber,
+                fontSize: 30.0
+              )
+              )
+          ],
+        ),
+        ),
+        Container(
+        margin: EdgeInsets.all(10),
+        child: Text(
+          'container 1',
+          textAlign: TextAlign.center,
+          ),
         color: Colors.cyan,
-        padding: EdgeInsets.all(20),
-        child: Text('inside Container'),
-       )
-     ],     
+        padding: EdgeInsets.symmetric(vertical: 100),
+      ),
+      Container(
+        margin: EdgeInsets.all(10),
+        child: Text(
+          'container 2',
+          textAlign: TextAlign.center,
+          ),
+        color: Colors.amberAccent,
+        padding: EdgeInsets.symmetric(vertical: 100),
+      ),
+      Container(
+        margin: EdgeInsets.all(10),
+        child: Text(
+          'container 3',
+          textAlign: TextAlign.center,
+          ),
+        color: Colors.greenAccent,
+        padding: EdgeInsets.symmetric(vertical: 100),
+      )
+    ]
+     
   ),
   floatingActionButton: FloatingActionButton(
     onPressed: () {},
