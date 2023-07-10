@@ -26,12 +26,14 @@ class Home extends StatelessWidget {
       centerTitle: true,
       backgroundColor: Colors.red[600],
     ),
-  body: const Center(
-    child: Icon(
-      Icons.check_box,
-      color: Colors.blueGrey,
-      size: 50.0,
-      ),
+  body: Center(
+    child: ElevatedButton(
+      onPressed: (){},
+      child: Text('click me'),
+      style: ElevatedButton.styleFrom(
+        primary: Colors.lightBlue,
+      )
+      )
   ),
   floatingActionButton: FloatingActionButton(
     onPressed: () {},
