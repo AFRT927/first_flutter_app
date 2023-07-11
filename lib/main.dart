@@ -26,68 +26,37 @@ class Home extends StatelessWidget {
       centerTitle: true,
       backgroundColor : Colors.red[600],
     ),
-  body: Column( 
-    crossAxisAlignment: CrossAxisAlignment.stretch,
-    mainAxisAlignment: MainAxisAlignment.start,
-    children: <Widget> [
-        Container(
-          color: Colors.black,
-          child: Row(          
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget> [
-            Text(
-              'hellow',
-              style: TextStyle(
-                color: Colors.amber,
-                fontSize: 30.0
-              )           
-              ),
-            Text(
-              'about us',
-              style: TextStyle(
-                color: Colors.amber,
-                fontSize: 30.0
-              )
-              ),
-            Text(
-              'prices',
-              style: TextStyle(
-                color: Colors.amber,
-                fontSize: 30.0
-              )
-              )
-          ],
+  body: Row(
+    children: <Widget>[
+      Expanded(
+        flex:5,
+        child: Image.asset('assets/space1.jpeg')
         ),
+      Expanded(
+        flex: 3,
+        child: Container(
+          padding: EdgeInsets.all(30),
+          color: Colors.cyan,
+          child: Text('1')
         ),
-        Container(
-        margin: EdgeInsets.all(10),
-        child: Text(
-          'container 1',
-          textAlign: TextAlign.center,
-          ),
-        color: Colors.cyan,
-        padding: EdgeInsets.symmetric(vertical: 100),
       ),
-      Container(
-        margin: EdgeInsets.all(10),
-        child: Text(
-          'container 2',
-          textAlign: TextAlign.center,
-          ),
-        color: Colors.amberAccent,
-        padding: EdgeInsets.symmetric(vertical: 100),
+      Expanded(
+        flex: 2,
+        child: Container(
+          padding: EdgeInsets.all(30),
+          color: Colors.pinkAccent,
+          child: Text('2')
+        ),
       ),
-      Container(
-        margin: EdgeInsets.all(10),
-        child: Text(
-          'container 3',
-          textAlign: TextAlign.center,
-          ),
-        color: Colors.greenAccent,
-        padding: EdgeInsets.symmetric(vertical: 100),
+      Expanded(
+        flex: 1,
+        child: Container(
+          padding: EdgeInsets.all(30),
+          color: Colors.amber,
+          child: Text('3')
+        ),
       )
-    ]
-     
+    ],
   ),
   floatingActionButton: FloatingActionButton(
     onPressed: () {},
